@@ -31,10 +31,13 @@
 
 <p><b>Project funded by the National Science Foundation</b> (<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1018625">CCF-1018625</a>)<br/>
 <b>PI:</b> <a href="http://www.umiacs.umd.edu/~jimmylin/"><b>Jimmy Lin</b></a>,
-<b>Co-PIs:</b> <a href="http://www.umiacs.umd.edu/~jbg/"><b>Jordan Boyd-Graber</b></a>,
+<b>Co-PIs:</b> <a href="http://www.cs.colorado.edu/~jbg/"><b>Jordan Boyd-Graber</b></a>,
 <a href="http://www.umiacs.umd.edu/~resnik/"><b>Philip Resnik</b></a><br/>
 <b>University of Maryland</b></p>
 
+<p><b>Note:</b> This project concluded in August 2014. This website is
+no longer actively maintained, and is available primarily for archival
+purposes.</p>
 
 <a name="overview"><h2>Overview</h2></a>
 
@@ -47,17 +50,51 @@ frequently treat the web as both monolithic and monolingual, ignoring
 the variety of languages represented and the rich interplay between
 topics and issues under discussion.</p>
 
-<p>This project moves the state of the art forward by focusing on two key
-challenges. First, highly-scalable algorithms for linguistic modeling
-within a Bayesian framework. Second, novel Bayesian models that learn
-consistent interpretations of text across languages and a wide range
-of response variables of interest (for example, views on an issue,
-strength of emotion relative to an event, and focus of attention).</p>
+<p>Over the past few years, we have advanced the state of the
+art by focusing on three key challenges:</p>
 
-<p>One of the products from this project
+<ul>
+
+<li>First, we have developed scalable algorithms for linguistic
+modeling within a Bayesian framework. This includes development of
+novel techniques for distributed variational inference (using
+MapReduce), adaptation of online variational inference to support
+changing vocabularies, and extension of online variational inference to
+adaptor grammars.</li>
+
+<li>Second, we have built and validated novel Bayesian models that
+learn consistent interpretations of text across languages and a wide
+range of response variables of interest (for example, views on an
+issue, strength of emotion relative to an event, and focus of
+attention).</li>
+
+<li>Finally, we have introduced a new interactive paradigm for topic
+modeling that allow users to provide feedback to improve model
+quality. Interactive topic models make our tools more accessible to
+users without a background in machine learning (for example, domain
+experts in biology and policy makers).</li>
+
+</ul>
+
+<p>We have applied our Bayesian modeling approaches to a variety of
+domains and have built multi-disciplinary collaborations with many
+researchers. This includes the development of hierarchical clustering
+methods for developmental biology (with researchers at the
+Agricultural Research Service) and for modeling protein structure
+(with researchers at the National Institutes of Health). In addition,
+we have collaborated with social scientists to validate our models for
+detecting social influence. Our work on interactive topic modeling has
+attracted significant interest from humanists and social
+scientists.</p>
+
+<p>Finally, we are committed to broader dissemination of our efforts
+through open-source software. One of the products from this project
 is <a href="http://mrlda.cc/"><b>Mr.LDA</b></a>, an open-source
 toolkit for flexible, scalable, multilingual topic modeling using
-variational inference in MapReduce.</p>
+variational inference in MapReduce. In addition, our fast
+single-machine hierarchical topic modeling code has been incorporated
+into <a href="http://mallet.cs.umass.edu"><b>Mallet</b></a>, the
+community-standard topic modeling package.</p>
 
 <p><small>&lt;&lt; <a href="#">back to top</a></small></p>
 
@@ -66,34 +103,34 @@ variational inference in MapReduce.</p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr>
 <td style="padding: 0px; border: 0 none; width: 80px" align="center"><img src="headshots/jbg.png" alt="Jordan Boyd-Graber" /></td>
-<td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~jbg/static/home.html"><b>Jordan Boyd-Graber</b></a><br/>
-Assistant Professor, The iSchool</td></tr>
+<td style="padding: 0px; border: 0 none;"><a href="http://www.cs.colorado.edu/~jbg/"><b>Jordan Boyd-Graber</b></a><br/>
+Assistant Professor, Computer Science, University of Colorado</td></tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/hal.jpg" alt="Hal Daume III" /></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~hal/"><b>Hal Daum&eacute III</b></a><br/>
-Associate Professor, Computer Science</td></tr>
+Associate Professor, Computer Science, University of Maryland</td></tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/jimmy.jpg" alt="Jimmy Lin" /></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~jimmylin/"><b>Jimmy Lin</b></a><br/>
-Associate Professor, The iSchool</td></tr>
+Associate Professor, The iSchool, University of Maryland</td></tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/psr.jpg" alt="Philip Resnik" /></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~resnik/"><b>Philip Resnik</b></a><br/>
-Professor, Linguistics</td></tr>
+Professor, Linguistics, University of Maryland</td></tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/nima.png" alt="Nima Asadi"/></td>
 <td style="padding: 0px; border: 0 none;"><b>Nima Asadi</b>
-<br/>Ph.D., Computer Science (Graduated Summer 2013)</td>
+<br/>Ph.D., Computer Science, University of Maryland (Graduated Summer 2013)</td>
 </tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/vlad.jpg" alt="Vlad Eidelman"/></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~vlad/"><b>Vlad Eidelman</b></a><br/>
-Ph.D. student, Computer Science
+Ph.D. student, Computer Science, University of Maryland (Graduated Winter 2013)
 </tr>
 
 <tr>
@@ -105,63 +142,77 @@ High School student (summer intern)</td>
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/he.jpg" alt="He He"/></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~hhe/"><b>He He</b></a><br/>
-Ph.D. student, Computer Science</td>
+Ph.D. student, Computer Science, University of Maryland</td>
 </tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/yuening.png" alt="Yuening Hu"/></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.cs.umd.edu/~ynhu/"><b>Yuening Hu</b></a><br/>
-Ph.D. student, Computer Science</td>
+Ph.D., Computer Science, University of Maryland (Graduated Summer 2014)</td>
 </tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/viet-an.jpg" alt="Viet-An Nguyen"/></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.cs.umd.edu/~vietan/"><b>Viet-An Nguyen</b></a><br/>
-Ph.D. student, Computer Science</td>
+Ph.D. student, Computer Science, University of Maryland</td>
 </tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/brianna.jpg" alt="Brianna Satinoff"/></td>
-<td style="padding: 0px; border: 0 none;"><b>Brianna Satinoff</b><br/>M.S., Computer Science (Graduated Spring 2011)</td>
+<td style="padding: 0px; border: 0 none;"><b>Brianna Satinoff</b><br/>M.S., Computer Science, University of Maryland (Graduated Spring 2011)</td>
 </tr>
 
 <tr>
 <td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/ke.jpg" alt="Ke Zhai"/></td>
 <td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~zhaike/"><b>Ke Zhai</b></a><br/>
-Ph.D. student, Computer Science</td>
+Ph.D., Computer Science, University of Maryland (Graduated Winter 2014)</td>
 </tr>
 
 </table>
 
 <p><small>&lt;&lt; <a href="#">back to top</a></small></p>
 
-<a name="publications"><h2>Publications (Selected)</h2></a>
+<a name="publications"><h2>Publications</h2></a>
 
-<p>Viet-An Nguyen, Jordan Boyd-Graber, Philip Resnik, Deborah Cai, Jennifer Midberry, and Yuanxin Wang. <b>Modeling Topic Control to Detect Influence in Conversations using Nonparametric Topic Models.</b> <i>Machine Learning Journal</i>, <i>to appear</i>.</p>
+<p>Ke Zhai, Jordan Boyd-Graber, Shay B. Cohen. <a href="http://www.aclweb.org/anthology/Q/Q14/Q14-1036.pdf"><b>Online Adaptor Grammars with Hybrid Inference.</b></a> <i>Transactions of the Association for Computational Linguistics</i>, 2:465-476, 2014.</p>
 
-<p>Jordan Boyd-Graber, Kimberly Glasgow, and Jackie Sauter Zajac. <a href="http://www.umiacs.umd.edu/~jbg/docs/2013_spoiler.pdf"><b>Spoiler Alert: Machine Learning Approaches to Detect Social Media Posts with Revelatory Information.</b></a> <i>Proceedings of the 76th Annual Meeting of the American Society for Information Science and Technology (ASIST 2013)</i>, 2013, Montreal, Canada.</p>
+<p>Thang Nguyen, Yuening Hu, and Jordan Boyd-Graber. <a href="http://www.aclweb.org/anthology/P/P14/P14-1034.pdf"><b>Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms.</b></a> <i>Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL 2014)</i>, 2014, pages 359-369, Baltimore, Maryland.</p>
+
+<p>Yuening Hu, Ke Zhai, Vlad Eidelman, and Jordan Boyd-Graber. <a href="http://www.aclweb.org/anthology/P/P14/P14-1110.pdf"><b>Polylingual Tree-Based Topic Models for Translation Domain Adaptation.</b></a> <i>Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL 2014)</i>, 2014, pages 1166-1176, Baltimore, Maryland.</p>
+
+<p>Mohit Iyyer, Peter Enns, Jordan Boyd-Graber, and Philip Resnik. <a href="http://www.aclweb.org/anthology/P/P14/P14-1105.pdf"><b>Political Ideology Detection Using Recursive Neural Networks.</b></a> <i>Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL 2014)</i>, 2014, pages 1113-1122, Baltimore, Maryland.</p>
+
+<p>Viet-An Nguyen, Jordan Boyd-Graber, Philip Resnik, Deborah Cai, Jennifer Midberry, and Yuanxin Wang. <a href="papers/Nguyen_etal_MLJ2014.pdf"><b>Modeling Topic Control to Detect Influence in Conversations using Nonparametric Topic Models.</b></a> <i>Machine Learning</i>, 95(3):381-421, 2014.</p>
+
+<p>Yuening Hu, Jordan Boyd-Graber, Brianna Satinoff, and Alison Smith. <a href="papers/Hu_etal_MLJ2014.pdf"><b>Interactive Topic Modeling.</b></a> <i>Machine Learning</i>, 95(3):423-469, 2014.</p>
+
+<p>Yuening Hu, Jordan Boyd-Graber, Hal Daume III, Z. Irene Ying. <a href="http://papers.nips.cc/paper/5161-binary-to-bushy-bayesian-hierarchical-clustering-with-the-beta-coalescent.pdf"><b>Binary to Bushy: Bayesian Hierarchical Clustering with the Beta Coalescent.</b></a> <i>Advances in Neural Information Processing Systems 26</i>, 2013, pages 1079-1087, Lake Tahoe, Nevada.</p>
+
+<p>Viet-An Nguyen, Jordan L. Boyd-Graber, Philip Resnik. <a href="http://papers.nips.cc/paper/5163-lexical-and-hierarchical-topic-regression.pdf"><b>Lexical and Hierarchical Topic Regression.</b></a> <i>Advances in Neural Information Processing Systems 26</i>, 2013, pages 1106-1114, Lake Tahoe, Nevada.</p>
+
+<p>Jordan Boyd-Graber, Kimberly Glasgow, and Jackie Sauter Zajac. <a href="papers/2013_spoiler.pdf"><b>Spoiler Alert: Machine Learning Approaches to Detect Social Media Posts with Revelatory Information.</b></a> <i>Proceedings of the 76th Annual Meeting of the American Society for Information Science and Technology (ASIST 2013)</i>, 2013, Montreal, Canada.</p>
 
 <p>Ke Zhai and Jordan Boyd-Graber. <a href="http://jmlr.org/proceedings/papers/v28/zhai13.pdf"><b>Online Topic Models with Infinite Vocabulary.</b></a> <i>Proceedings of the 30th International Conference on Machine Learning (ICML 2013)</i>, 2013, pages 561-569, Atlanta, Georgia.</p>
 
-<p>Naho Orita, Rebecca McKeown, Naomi H. Feldman, Jeffrey Lidz, and Jordan Boyd-Graber. <a href="http://ling.umd.edu/~nhf/papers/Pronouns.pdf"><b>Discovering Pronoun Categories using Discourse Information.</b></a> <i>Proceedings of the 35th Annual Meeting of the Cognitive Science Society</i>, 2013, Berlin, Germany.</p>
+<p>Naho Orita, Rebecca McKeown, Naomi H. Feldman, Jeffrey Lidz, and Jordan Boyd-Graber. <a href="papers/Pronouns.pdf"><b>Discovering Pronoun Categories using Discourse Information.</b></a> <i>Proceedings of the 35th Annual Meeting of the Cognitive Science Society</i>, 2013, Berlin, Germany.</p>
 
 <p>Viet-An Nguyen, Jordan Boyd-Graber, and Stephen Altschul. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23294268"><b>Dirichlet Mixtures, the Dirichlet Process, and the Structure of Protein Space.</b></a> <i>Journal of Computational Biology</i>, 20(1):1-18, 2013.</p>
 
-<p>Viet-An Nguyen, Yuening Hu, Jordan Boyd-Graber, and Philip Resnik. <a href="http://www.aclweb.org/anthology-new/N/N13/N13-3009.pdf"><b>Argviz: Interactive Visualization of Topic Dynamics in Multi-party Conversations</a></b>. <i>Proceedings of the NAACL HLT 2013 Demonstration Session</i>, 2013, pages 26-39, Atlanta, Georgia.</p>
-
-<p>Yuening Hu, Jordan Boyd-Graber, Brianna Satinoff. <a href="http://www.aclweb.org/anthology-new/P/P11/P11-1026.pdf"><b>Interactive Topic Modeling.</b></a> <i>Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies (ACL-HLT 2011)</i>, 2011, pages 248-257, Portland, Oregon.</p>
+<p>Viet-An Nguyen, Yuening Hu, Jordan Boyd-Graber, and Philip Resnik. <a href="http://www.aclweb.org/anthology/N/N13/N13-3009.pdf"><b>Argviz: Interactive Visualization of Topic Dynamics in Multi-party Conversations</a></b>. <i>Proceedings of the NAACL HLT 2013 Demonstration Session</i>, 2013, pages 26-39, Atlanta, Georgia.</p>
 
 <p>Ke Zhai, Jordan Boyd-Graber, Nima Asadi, and Mohamad Alkhouja. <a href="http://www2012.wwwconference.org/proceedings/proceedings/p879.pdf"><b>Mr. LDA: A Flexible Large Scale Topic Modeling Package using Variational Inference in MapReduce.</b></a> <i>Proceedings of the 21th International World Wide Web Conference (WWW 2012)</i>, 2012, pages 879-888, Lyon, France.</td></tr></p>
 
-<p>Vladimir Eidelman, Jordan Boyd-Graber, and Philip Resnik. <a href="http://aclweb.org/anthology-new/P/P12/P12-2023.pdf"><b>Topic Models for Dynamic Translation Model Adaptation.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 115-199, Jeju, Republic of Korea.</p>
+<p>Vladimir Eidelman, Jordan Boyd-Graber, and Philip Resnik. <a href="http://aclweb.org/anthology/P/P12/P12-2023.pdf"><b>Topic Models for Dynamic Translation Model Adaptation.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 115-199, Jeju, Republic of Korea.</p>
 
-<p>Viet-An Nguyen, Jordan Boyd-Graber, and Philip Resnik. <a href="http://aclweb.org/anthology-new/P/P12/P12-1009.pdf"><b>SITS: A Hierarchical Nonparametric Model using Speaker Identity for Topic Segmentation in Multiparty Conversations.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 78-87, Jeju, Republic of Korea.</p>
+<p>Viet-An Nguyen, Jordan Boyd-Graber, and Philip Resnik. <a href="http://aclweb.org/anthology/P/P12/P12-1009.pdf"><b>SITS: A Hierarchical Nonparametric Model using Speaker Identity for Topic Segmentation in Multiparty Conversations.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 78-87, Jeju, Republic of Korea.</p>
 
-<p>Yuening Hu and Jordan Boyd-Graber. <a href="http://aclweb.org/anthology-new/P/P12/P12-2054v2.pdf"><b>Efficient Tree-Based Topic Modeling.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 275-279, Jeju, Republic of Korea.</p>
+<p>Yuening Hu and Jordan Boyd-Graber. <a href="http://aclweb.org/anthology/P/P12/P12-2054v2.pdf"><b>Efficient Tree-Based Topic Modeling.</b></a> <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL 2012)</i>, 2012, pages 275-279, Jeju, Republic of Korea.</p>
 
-<p>Jordan Boyd-Graber, Brianna Satinoff, He He, and Hal Daume III. <a href="http://aclweb.org/anthology-new/D/D12/D12-1118.pdf"><b>Besting the Quiz Master: Crowdsourcing Incremental Classification Games.</b></a> <i>Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning (EMNLP-CoNLL 2012)</i>, 2012, pages 1290-1301, Jeju, Republic of Korea.</p>
+<p>Jordan Boyd-Graber, Brianna Satinoff, He He, and Hal Daume III. <a href="http://aclweb.org/anthology/D/D12/D12-1118.pdf"><b>Besting the Quiz Master: Crowdsourcing Incremental Classification Games.</b></a> <i>Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning (EMNLP-CoNLL 2012)</i>, 2012, pages 1290-1301, Jeju, Republic of Korea.</p>
 
 <p>Yuening Hu, Ke Zhai, Sinead Williamson, and Jordan Boyd-Graber. <a href="http://icml.cc/2012/papers/750.pdf"><b>Modeling Images using Transformed Indian Buffet Processes.</b></a> <i>Proceedings of the 29th International Conference on Machine Learning (ICML 2012)</i>, 2012, Edinburgh, Scotland.</p>
+
+<p>Yuening Hu, Jordan Boyd-Graber, Brianna Satinoff. <a href="http://www.aclweb.org/anthology/P/P11/P11-1026.pdf"><b>Interactive Topic Modeling.</b></a> <i>Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies (ACL-HLT 2011)</i>, 2011, pages 248-257, Portland, Oregon.</p>
 
 <p><small>&lt;&lt; <a href="#">back to top</a></small></p>
 
