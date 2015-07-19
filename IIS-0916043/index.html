@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ivory: A Hadoop Toolkit for Distributed Text Retrieval</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+<p style="padding-top: 150px">
+<a href="#overview">Overview</a><br/>
+<a href="#team">Project Team</a><br/>
+<a href="#publications">Publications</a><br/>
+<a href="#software">Software</a></p>
+
+      </header>
+      <section>
+
+<p style="text-align: right">
+<img width="221" height="36" src="images/umd-logo.gif"></p>
+
+<h1>Ivory: A Hadoop Toolkit for Distributed Text Retrieval</h1>
+
+<p><b>Project funded by the National Science Foundation</b> (<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0916043">IIS-0916043</a>)<br/>
+<b>PI:</b> <a href="http://www.umiacs.umd.edu/~jimmylin/"><b>Jimmy Lin</b></a>,
+<b>University of Maryland</b></p>
+
+<p>This project began September 2009 and ended September 2013. This
+website exists for archival purposes only and is not being actively
+maintained.</p>
+
+<a name="overview"><h2>Overview</h2></a>
+
+<p>Text retrieval is a technology that is vital for modern
+information-based societies, and today's systems must handle petabytes
+of data. Clearly, this challenge overwhelms the capabilities of
+individual servers, necessitating the processing power offered by
+networked clusters. Yet, academic information retrieval research is
+still dominated by single-core solutions.</p>
+
+<p>The question we ask in this project is: What should information
+retrieval systems look like in the era of "big data"? In particular,
+this project takes advantage of the MapReduce programming framework,
+via the Hadoop open-source implementation. We explore the design space
+of efficient algorithms for indexing and retrieval, with the goal of
+understanding tradeoffs between:</p>
+
+<ul>
+
+<li>Quality (How good are the search results?)
+<li>Time (How fast is the algorithm?)
+<li>Space (How much memory do data structures consume?)
+<li>Scalability (How much text can our algorithms be applied to?)
+
+</ul>
+
+<p><small>&lt;&lt; <a href="#">back to top</a></small></p>
+
+<a name="team"><h2>Project Team</h2></a>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/jimmy.jpg" alt="Jimmy Lin" /></td>
+<td style="padding: 0px; border: 0 none;"><a href="http://www.umiacs.umd.edu/~jimmylin/"><b>Jimmy Lin</b></a><br/>
+Associate Professor, The iSchool</td></tr>
+
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/ashwin.jpg" alt="K. Ashwin Kumar"/></td>
+<td style="padding: 0px; border: 0 none;"><b>K. Ashwin Kumar</b>
+<br/>Ph.D. student, Computer Science</td>
+</tr>
+
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/nima.png" alt="Nima Asadi"/></td>
+<td style="padding: 0px; border: 0 none;"><b>Nima Asadi</b>
+<br/>Ph.D., Computer Science (Graduated Summer 2013)</td>
+</tr>
+
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/ferhan.png" alt="Ferhan Ture"/></td>
+<td style="padding: 0px; border: 0 none;"><b>Ferhan Ture</b>
+<br/>Ph.D., Computer Science (Graduated Summer 2013)</td>
+</tr>
+
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/lidan.png" alt="Lidan Wang"/></td>
+<td style="padding: 0px; border: 0 none;"><b>Lidan Wang</b>
+<br/>Ph.D., Computer Science (Graduated Summer 2012)</td>
+</tr>
+
+<tr>
+<td style="padding: 0px; border: 0 none;" align="center"><img src="headshots/tamer.png" alt="Tamer Elsayed"/></td>
+<td style="padding: 0px; border: 0 none;"><b>Tamer Elsayed</b>
+<br/>Ph.D., Computer Science (Graduated Summer 2009)</td>
+</tr>
+
+</table>
+
+<p><small>&lt;&lt; <a href="#">back to top</a></small></p>
+
+<a name="publications"><h2>Publications (Selected)</h2></a>
+
+<h3>Dissertations</h3>
+
+<p><a href="http://drum.lib.umd.edu/handle/1903/14502"><b>Searching to Translate and Translating to Search: When Information Retrieval Meets Machine Translation.</b></a><br/>
+Ferhan Ture. <span style="color: gray">Ph.D. Dissertation, University of Maryland, College Park, 2013.</span></p>
+
+<p><a href="http://drum.lib.umd.edu/handle/1903/14443"><b>Multi-Stage Search Architectures for Streaming Documents.</b></a><br/>
+Nima Asadi. <span style="color: gray">Ph.D. Dissertation, University of Maryland, College Park, 2013.</span></p>
+
+<p><a href="http://drum.lib.umd.edu/handle/1903/13187"><b>Learning to Efficiently Rank.</b></a><br/>
+Lidan Wang. <span style="color: gray">Ph.D. Dissertation, University of Maryland, College Park, 2012.</span></p>
+
+
+<h3>Journal Articles</h3>
+
+<p><a href="publications/Asadi_Lin_IRJ2013.pdf"><b>Document Vector Representations for Feature Extraction in Multi-Stage Document Ranking.</b></a><br/>
+Nima Asadi and Jimmy Lin. <span style="color: gray">Information Retrieval</i>, 16(6):747-768, 2013.</span></p>
+
+<h3>Conference Papers</h3>
+
+<p><a href="publications/Kumar_etal_VLDB2013.pdf"><b>Hone: "Scaling Down" Hadoop on Shared-Memory Systems.</b></a><br/>
+K. Ashwin Kumar, Jonathan Gluck, Amol Deshpande, and Jimmy Lin. <span style="color: gray">Proceedings of the 39th International Conference on Very Large Data Base (VLDB 2013), page 1354-1357, August 2013, Trento, Italy.</span></p>
+
+<p><a href="publications/Asadi_Lin_SIGIR2013.pdf"><b>Effectiveness/Efficiency Tradeoffs for Candidate Generation in Multi-Stage Retrieval Architectures.</b></a><br/>
+Nima Asadi and Jimmy Lin. <span style="color: gray">Proceedings of the 36th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2013), pages 997-1000, July 2013, Dublin, Ireland.</span></p>
+
+<p><a href="publications/Ture_etal_COLING2012.pdf"><b>Combining Statistical Translation Techniques for Cross-Language Information Retrieval.</b></a><br/>
+Ferhan Ture, Jimmy Lin, and Douglas W. Oard. <span style="color: gray">Proceedings of the 24th International Conference on Computational Linguistics (COLING 2012)</i>, pages 2685-2702, December 2012, Mumbai, India.</span></p>
+
+<p><a href="publications/Asadi_Lin_CIKM2012.pdf"><b>Fast Candidate Generation for Two-Phase Document Ranking: Postings List Intersection with Bloom Filters.</b></a><br/>
+Nima Asadi and Jimmy Lin. <span style="color: gray">Proceedings of 21th International Conference on Information and Knowledge Management (CIKM 2012)</i>, pages 2419-2422, October 2012, Maui, Hawaii.</span></p>
+
+<p><a href="publications/Ture_Lin_NAACL-HLT2012.pdf"><b>Why Not Grab a Free Lunch? Mining Large Corpora for Parallel Sentences to Improve Translation Modeling.</b></a><br/>
+Ferhan Ture and Jimmy Lin. <span style="color: gray">Proceedings of the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL/HLT 2012), pages 626-630, June 2012, Montreal, Quebec, Canada.</span></p>
+
+
+<p><a href="publications/Elsayed_etal_CIKM2011.pdf"><b>When Close Enough Is Good Enough: Approximate Positional Indexes for Efficient Ranked Retrieval.</b></a><br/>
+Tamer Elsayed, Jimmy Lin, and Don Metzler. <span style="color: gray">Proceedings of 20th International Conference on Information and Knowledge Management (CIKM 2011), pages 1993-1996, October 2011, Glasgow, Scotland.</span></p>
+
+
+<p><a href="publications/Ture_etal_SIGIR2011.pdf"><b>No Free Lunch: Brute Force vs. Locality-Sensitive Hashing for Cross-lingual Pairwise Similarity.</b></a><br/>
+Ferhan Ture, Tamer Elsayed, and Jimmy Lin. <span style="color: gray">Proceedings of the 34th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2011), page 943-952, July 2011, Beijing, China.</span></p>
+
+<p><a href="publications/Wang_etal_SIGIR2011.pdf"><b>A Cascade Ranking Model for Efficient Ranked Retrieval.</b></a><br/>
+Lidan Wang, Jimmy Lin, and Donald Metzler. <span style="color: gray">Proceedings of the 34th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2011), page 105-114, July 2011, Beijing, China.</span></p>
+
+<p><a href="publications/Wang_etal_CIKM2010.pdf"><b>Ranking Under Temporal Constraints.</b></a><br/>
+Lidan Wang, Donald Metzler, and Jimmy Lin. <span style="color: gray">Proceedings of 19th International Conference on Information and Knowledge Management (CIKM 2010), pages 79-88, October 2010, Toronto, Canada.</span></p>
+
+<p><a href="publications/Wang_etal_SIGIR2010.pdf"><b>Learning to Efficiently Rank.</b></a><br/>
+Lidan Wang, Jimmy Lin, and Donald Metzler. <span style="color: gray">Proceedings of the 33rd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2010), pages 138-145, July 2010, Geneva, Switzerland.</span></p>
+
+<p><a href="publications/Lin_etal_TREC2009.pdf"><b>Of Ivory and Smurfs: Loxodontan MapReduce Experiments for Web Search.</b></a><br/>
+Jimmy Lin, Donald Metzler, Tamer Elsayed, and Lidan Wang. <span style="color: gray">Proceedings of the Eighteenth Text REtrieval Conference (TREC 2009), November 2009, Gaithersburg, Maryland.</span></p>
+
+<p><small>&lt;&lt; <a href="#">back to top</a></small></p>
+
+<a name="software"><h2>Software</h2></a>
+
+<p><a href="http://ivory.cc/"><b>Ivory</b></a> is an open-source
+Hadoop toolkit for web-scale information retrieval research supported
+in part by this project. It serves as an experimental platform for
+much of the research described here.</p>
+
+
+<p><small>&lt;&lt; <a href="#">back to top</a></small></p>
+
+<h2>Acknowledgments</h2>
+
+<p>This work is supported by the National Science Foundation. Any
+opinions, findings, and conclusions or recommendations expressed in
+this material are those of the researchers and do not necessarily
+reflect the views of the National Science Foundation.</p>
+
+</section>
+      <footer>
+
+        <p><small>Theme based on <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="js/scale.fix.js"></script>
+  </body>
+</html>
