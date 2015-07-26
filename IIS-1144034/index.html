@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Learning to Efficiently Rank with Cascades</title>
+<style type="text/css" media="screen">@import url( style.css );</style>
+</head>
+
+<body>
+
+<div id="wrap">
+<div id="container" class="one-column" >
+
+<!-- header START -->
+
+<div id="header">
+<div id="caption">
+<h1 id="title" style="color: white;">Learning to Efficiently Rank with Cascades</h1>
+<div id="tagline">University of Maryland</div>
+</div>
+</div>
+
+<!-- header END -->
+
+<!-- content START -->
+
+<div id="content">
+
+
+
+	<!-- main START -->
+
+	<div id="main">
+
+
+<!--- START MAIN CONTENT HERE -->
+
+<div class="post">
+<div class="content">
+
+<p><b>Funded by the National Science Foundation</b> (<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1144034">IIS-1144034</a>)<br/>
+<b>PI:</b> Jimmy Lin</p>
+
+<p><b>Note:</b> This project concluded in August 2014. This website is
+no longer actively maintained, and is available primarily for archival
+purposes.</p>
+
+</div>
+</div>
+
+<div class="post"><h2>Project Overview</h2>
+<div class="content">
+
+<p>When it comes to search, users desire results that are not only
+good but also fast. That is, ranking algorithms should be both
+<i>effective</i> and <i>efficient</i>. These two desiderata, however,
+are often in tension. To obtain high-quality results, developers
+typically take advantage of machine learning techniques to rank
+documents based on a multitude of features (so-called "learning to
+rank"), e.g., matching term scores, phrase scores, static document
+features, etc. In the web context, state-of-the-art rankers use
+hundreds of features or more. In general, the more features an
+algorithm considers, the better the quality overall. However,
+considering more features takes more time, particularly for certain
+types of features that are computationally expensive. Thus, we often
+observe an inverse relationship between quality and speed.</p>
+
+<p>In the information retrieval community, explorations in
+effectiveness and efficiency have been largely disjoint. This is
+problematic in that a piecemeal approach may yield ranking models that
+are impractically slow on web-scale collections or algorithmic
+optimizations that sacrifice quality to an unacceptable degree. The
+aim of our work is to develop an integrated framework to building
+search systems that are both effective and efficient. To this end, we
+have been exploring a research program, dubbed "learning
+to <i>efficiently</i> rank", that allows algorithm designers to
+capture, model, and reason about tradeoffs between effectiveness and
+efficiency in a unified machine-learning framework.</p>
+
+<p>Our core idea is to consider the ranking problem as a "cascade",
+where ranking is broken into a finite number of distinct stages. Each
+stage considers successively richer and more complex features, but
+over successively smaller candidate document sets. The intuition is
+that although complex features are more time-consuming to compute, the
+additional overhead is offset by examining fewer documents. In other
+words, the cascade model views retrieval as a multi-stage progressive
+refinement problem, where each stage balances the cost of exploiting
+various features with the potential gain in terms of better results.
+We have explored this notion in the context of linear models and
+tree-based models.</p>
+
+<p>In addition to the document ranking problem, we have also explored
+the design of search architectures. Instead of treating the search
+engine as a monolithic entity, we have experimented with a multi-stage
+architecture where retrieval is decomposed into a candidate generation
+stage, a feature extraction stage, and a reranking stage using
+machine-learned models.</p>
+
+<p>Our findings are detailed in the publications listed below.</p>
+
+</div>
+</div>
+
+
+<div class="post"><h2>Project Team</h2>
+<div class="content">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="border: 0 none;" align="center"><img src="images/headshot-tile.jpg" alt="picture of Jimmy" /></td>
+<td><b>Jimmy Lin</b><br/>
+Associate Professor<br/>
+The iSchool (College of Information Studies), University of Maryland</td></tr>
+
+<tr>
+<td style="border: 0 none;" align="center"><img src="images/hua.jpg" alt="Hua He"/></td>
+<td><b>Hua He</b><br/>Ph.D. student<br/>Department of Computer Science, University of Maryland<br/>&nbsp;</td>
+</tr>
+
+<tr>
+<td style="border: 0 none;" align="center"><img src="images/nima.png" alt="Nima Asadi"/></td>
+<td><b>Nima Asadi</b>, Ph.D., Computer Science<br/>
+Graduated Summer 2013<br/>
+Dissertation Title: Multi-Stage Search Architectures for Streaming Documents</td>
+</tr>
+
+<tr>
+<td style="border: 0 none;" align="center"><img src="images/lidan2.png" alt="Lidan Wang"/></td>
+<td><b>Lidan Wang</b>, Ph.D., Computer Science<br/>
+Graduated Summer 2012<br/>
+Dissertation title: Learning to Efficiently Rank<br/>
+</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+<div class="post"><h2>Relevant Publications</h2>
+<div class="content">
+
+<ul>
+
+<li>Nima Asadi, Jimmy Lin, and Arjen P. de Vries. <b><a href="publications/Asadi_etal_TKDE2014.pdf">Runtime Optimizations for Tree-Based Machine Learning Models.</a></b> <i>IEEE Transactions on Knowledge and Data Engineering</i>, 26(9):2281-2292, 2014.</li>
+
+<li>Nima Asadi and Jimmy Lin. <b><a href="publications/Asadi_Lin_IRJ2013.pdf">Document Vector Representations for Feature Extraction in Multi-Stage Document Ranking.</a></b> <i>Information Retrieval</i>, 16(6):747-768, 2013.
+
+<li>Nima Asadi and Jimmy Lin. <b><a href="publications/Asadi_Lin_SIGIR2013.pdf">Effectiveness/Efficiency Tradeoffs for Candidate Generation in Multi-Stage Retrieval Architectures.</a></b> <i>Proceedings of the 36th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2013)</i>, pages 997-1000, July 2013, Dublin, Ireland.</li>
+
+<li>Nima Asadi. <b><a href="http://drum.lib.umd.edu/handle/1903/14443">Multi-Stage Search Architectures for Streaming Documents.</a></b> Ph.D. dissertation, University of Maryland, College Park, 2013.</li>
+
+<li>Nima Asadi and Jimmy Lin. <b><a href="publications/Asadi_Lin_ECIR2013.pdf">Training Efficient Tree-Based Models for Document Ranking.</a></b> <i>Proceedings of the 35th European Conference on Information Retrieval (ECIR 2013)</i>, pages 146-157, March 2013, Moscow, Russia.</li>
+
+<li>Nima Asadi and Jimmy Lin. <b><a href="publications/Asadi_Lin_CIKM2012.pdf">Fast Candidate Generation for Two-Phase Document Ranking: Postings List Intersection with Bloom Filters.</a></b> <i>Proceedings of 21th International Conference on Information and Knowledge Management (CIKM 2012)</i>, pages 2419-2422, October 2012, Maui, Hawaii.</li>
+
+<li>Lidan Wang. <b><a href="http://drum.lib.umd.edu/handle/1903/13187">Learning to Efficiently Rank.</a></b> Ph.D. dissertation, University of Maryland, College Park, 2012.</li>
+
+<li>Lidan Wang, Jimmy Lin, and Donald Metzler. <b><a href="publications/Wang_etal_SIGIR2011.pdf">A Cascade Ranking Model for Efficient Ranked Retrieval.</a></b> <i>Proceedings of the 34th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2011)</i>, page 105-114, July 2011, Beijing, China.</li>
+
+<li>Lidan Wang, Donald Metzler, and Jimmy Lin. <b><a href="publications/Wang_etal_CIKM2010.pdf">Ranking Under Temporal Constraints.</a></b> <i>Proceedings of 19th International Conference on Information and Knowledge Management (CIKM 2010)</i>, pages 79-88, October 2010, Toronto, Canada.</li>
+
+<li>Lidan Wang, Jimmy Lin, and Donald Metzler. <b><a href="publications/Wang_etal_SIGIR2010.pdf">Learning to Efficiently Rank.</a></b> <i>Proceedings of the 33rd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2010)</i>, pages 138-145, July 2010, Geneva, Switzerland.</li>
+
+</ul>
+
+</div>
+</div>
+
+
+<div class="post"><h2>Broader Impacts</h2>
+<div class="content">
+
+<ul>
+
+<li>The Ivory toolkit, which contains implementations described in
+many of the above papers, is available as open-source software and can
+be downloaded <a href="http://ivory.cc/">here</a>.</li>
+
+<li>OptTrees, implementations of architecture-conscious regression
+trees for learning-to-rank, is available as open-source software and
+can be downloaded <a href="http://opttrees.org/">here</a>.</li>
+
+</ul>
+
+</div>
+</div>
+
+<div class="post"><h2>Disclaimer</h2>
+<div class="content">
+
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the researchers and do not necessarily reflect the views of the National Science Foundation.  Please contact the PI for additional information.
+
+</div>
+</div>
+
+<!--- END MAIN CONTENT HERE -->
+
+	</div>
+
+	<!-- main END -->
+
+
+
+		<div class="fixed"></div>
+
+</div>
+
+<!-- content END -->
+
+
+
+<!-- footer START -->
+
+<div id="footer">
+<div id="themeinfo">
+<p style="margin-top: 20px">Adapted from a WordPress Theme by <a href="http://www.neoease.com/">NeoEase</a>. Valid <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a>.</p>
+</div>
+</div>
+
+<!-- footer END -->
+
+
+
+</div>
+
+<!-- container END -->
+
+</div>
+
+<!-- wrap END -->
+
+</body>
+
+</html>
+
+
+
