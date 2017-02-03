@@ -38,47 +38,23 @@ maintained.</p>
 
 <a name="overview"><h2>Overview</h2></a>
 
-<p>Search remains one of the best solutions today for satisfying users'
-information needs. However, today we are inundated with increasing
-quantities of information, with no relief in sight. As data volume on
-different media grows, so does the velocity &mdash; the rate at which
-information is being generated, transmitted, and consumed. The growing
-importance of social media such as Twitter further exacerbates this
-problem. It is clear that better real-time search capabilities are
-needed. This project aims to advance the state of the art in
-information retrieval by tackling real-time search, and more broadly,
-addressing retrieval challenges associated with streams of
-documents. Accomplishing this requires a better understanding of the
-temporal characteristics of queries, search results, and the
-underlying document collections from which they derive.</p>
+<p>Search remains one of the best solutions today for satisfying users' information needs. However, today we are inundated with increasing quantities of information, with no relief in sight. As data volume on different media grows, so does the velocity &mdash; the rate at which information is being generated, transmitted, and consumed. The growing importance of social media such as Twitter further exacerbates this problem. It is clear that better algorithms and systems for managing real-time document streams are needed: both retrospective techniques to handle content that has already accumulated as well as prospective techniques that anticipates future content in a proactive manner.</p>
 
-<p>Overall, our effort consists of two themes:</p>
+<p>This project advanced the state of the art in information retrieval by tackling real-time search, and more broadly, addressing retrieval challenges associated with streams of documents and other types of dynamic document collections. From the perspective of intellectual merit, this project has made three main contributions:</p>
 
 <ol>
 
-<li>High-performance search architectures for low-latency,
-high-throughput indexing and query evaluation, along with associated
-storage infrastructure for timestamped document collections.</li>
+<li>The development of high-performance search architectures for low-latency, high-throughput indexing and query evaluation, along with associated storage infrastructure for timestamped document collections.</li>
 
-<li>Methods for extracting temporal signals from streams of documents
-and temporally-focused ranking algorithms for addressing users'
-information needs.</li>
+<li>Methods for extracting temporal signals from streams of documents and temporally-focused ranking algorithms.</li>
+
+<li>The development of a task model, algorithms, as well as an evaluation framework for push notifications, where systems proactively monitor document streams (e.g., social media posts) to identify and deliver those that are of interest to the user.</li>
 
 </ol>
 
-<p>One important aspect of this project is close coordination with
-evaluation efforts at the <a href="http://trec.nist.gov">Text
-Retrieval Conferences (TRECs)</a> sponsored by the U.S. National
-Institute of Standards and Technology (NIST). Since 2011, we have
-co-organized the microblog tracks, which operationalize evaluation of
-temporally-anchored search on Twitter data. These efforts enhance the
-broader impact of our activities.</p>
+<p>One important aspect of this project was close coordination with evaluation efforts at the Text Retrieval Conferences (TRECs) sponsored by the U.S. National Institute of Standards and Technology (NIST). Each year, TREC attracts dozens of participants from around the world to work on shared tasks that jointly define the future direction of information retrieval research. This project has developed task models and evaluation methodologies for the TREC Microblog and Real-Time Summarization Tracks, including an innovative "Living Labs" evaluation framework for prospective information needs that take advantage of live users to assess push notification systems. These efforts have had broader impact in helping to steer the overall research direction of the field. One additional significant broader impact of this project is the uptake of research results by industry. As a specific example, Twitter's real-time recommendation system GraphJet, which was deployed in 2014, makes use of results from this project involving memory allocation models for index structures.</p>
 
-<p>Temporally-enhanced search capabilities promise to provide users
-more effective access to time-sensitive information. Scenarios include
-journalists tracking events around the globe, victims of natural
-disasters trying to find loved ones, and political analysts digesting
-reactions to a candidate's speech.</p>
+<p>Overall, this successful project has contributed much to real-time information access, from both the perspective of effectiveness (systems that delivery high-quality results) and efficiency (systems that deliver results with low latency).</p>
 
 <p><small>&lt;&lt; <a href="#">back to top</a></small></p>
 
